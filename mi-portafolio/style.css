@@ -36,7 +36,7 @@ html {
 
 body {
   /* margin: 0; */
-
+  
   overflow-x: hidden; 
   /* font-family:rela */
   color: var(--text-color) !important;
@@ -91,7 +91,7 @@ img {
 }
 
 p {
-  /* margin: 0 !important; */
+
   line-height: 1.6rem;
 }
 
@@ -101,6 +101,7 @@ p {
   scroll-margin-top:3ex;
 }
 /******************Components*********************/
+
 /*scroll-top-btn*/
 .scroll-top-btn {
   /* position: fixed;*/
@@ -126,11 +127,9 @@ p {
   
 }
 
-
-
 .scroll-top-btn:hover {
   background-color: var(--first-alpha-color);
-  /* color: var(--main-color); */
+
 }
 
 .hidden {
@@ -180,6 +179,20 @@ p {
 
 .contact-form *::placeholder {
   color: var(--gray-dark-color);
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--first-color);
+}
+
+#staticBackdrop{
+padding-right: 0px !important;
 }
 
 .modal#gracias:target {
@@ -314,6 +327,12 @@ progress::-moz-progress-value {
   font-size: 0.85rem;
 }
 /****************Utilities*********************/
+/* .row{
+  margin-right:0px !important;
+  margin-left:0px !important;
+} */
+
+body.modal-open { overflow:inherit; padding-right:inherit !important; }
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
@@ -326,7 +345,7 @@ progress::-moz-progress-value {
   }
 .bg-light{
   background-color: var(--second-color) !important;
-  /* background-color: transparent !important; */
+
 }
 
 .bg-progress-value{
@@ -369,7 +388,6 @@ display: inline-block;
 }
 /***********************site style***************************/
 .footer {
-  /* margin-bottom: var(--header-height); */
   background-color: var(--third-color);
   text-align: center;
   padding: 0.5rem;
@@ -396,15 +414,12 @@ display: inline-block;
   margin-top: -1rem;
 }
 
-/* .contact-cards {
-  width: 100%;
-} */
+
 .header{
   z-index: 999;
   width: 100%;
   background-color: var(--second-color);
-  /* background-color: #fff !important; */
-    /* background-color: transparent !important; */
+
   }
 
 .navbar-light .navbar-toggler{
@@ -415,7 +430,7 @@ border-color: #149ddd !important;
 .carousel{
 
   background-color: var(--carousel-bg-color);
-  /* min-height: 400px; */
+  
 }
 
 .carousel-caption {
@@ -443,7 +458,31 @@ margin-top: 20px;
   margin-bottom: 1.25rem;
 }
 
+.portfolio-modal {
+  background-color: var(--white-color);
+  padding: 1rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
 
+
+.portfolio-modal h3 {
+  padding: 0.5rem 0;
+  margin: 1rem auto;
+  border-bottom: medium solid var(--first-color);
+  color: var(--title-color);
+}
+
+.portfolio-details {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: 2rem;
+}
+
+.portfolio-details b {
+  color: var(--first-color);
+}
 
 .portfolio-card {
   position: relative;
@@ -465,7 +504,6 @@ margin-top: 20px;
   width: 100%;
   height: 100%;
   padding: 1rem;
-  /* background-color: var(--first-alpha-color); */
   background-color: var(--first-alpha-color);
   color: var(--white-color);
   opacity: 0;
@@ -482,13 +520,30 @@ margin-top: 20px;
  padding-left: 0px;
  padding-right: 0px; 
 }
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  .modal-dialog {
+    max-width: 400px;
+
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-modal {
+    flex-direction: row;
+    max-width: 800px;
+  }
+}
 @media screen and (max-width: 992px) {
   .navbar-nav{
   text-align: center;
   
   }
 
-  
+
   .about article:first-child a{
    margin-bottom: 30px; 
 
@@ -507,7 +562,7 @@ margin-top: 20px;
   }
 
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
 
     .carousel-item img {
  
@@ -515,7 +570,12 @@ margin-top: 20px;
       margin-bottom: 200px;
       }
 
-  }
+      .portfolio-info {
+        margin: 1rem;
+      }
+
+      
+    }
   
 
 @media screen and (min-width: 992px) {
@@ -526,14 +586,15 @@ margin-top: 20px;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   }
 
  
+  
  
   .menu a{
     color: var(--first-color) !important;
-    /* color: white !important; */
+ 
 
   }
   .menu a:hover, .menu a:focus {
