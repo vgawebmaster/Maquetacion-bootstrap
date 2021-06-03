@@ -102,6 +102,18 @@ p {
 }
 /******************Components*********************/
 
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.avatar {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
 /*scroll-top-btn*/
 .scroll-top-btn {
   /* position: fixed;*/
@@ -192,9 +204,10 @@ p {
 }
 
 button.close span svg {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   fill: var(--first-color) !important;
+  
 }
 
 #staticBackdrop{
@@ -337,7 +350,12 @@ progress::-moz-progress-value {
   margin-right:0px !important;
   margin-left:0px !important;
 } */
-
+blockquote {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--first-color);
+  font-size: 1rem !important;
+}
 body.modal-open { overflow:inherit; padding-right:inherit !important; }
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
@@ -393,6 +411,16 @@ display: inline-block;
   background-color: var(--gray-light-color);
 }
 /***********************site style***************************/
+.custom-modal-styles h5{
+color:var(--first-color) !important;
+font-weight: bold;
+
+}
+
+.custom-modal-styles h6{
+  font-weight: bold;
+  
+}
 .footer {
   background-color: var(--third-color);
   text-align: center;
@@ -442,6 +470,12 @@ border-color: #149ddd !important;
 .carousel-caption {
   color: var(--text-color);
   text-align: center;
+}
+
+.carousel-caption > a {
+color: var(--text-color) !important;
+text-decoration: underline !important;
+
 }
 .carousel-caption h3{
 color: var(--first-color);
