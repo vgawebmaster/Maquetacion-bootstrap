@@ -1,21 +1,21 @@
 import  scrollTopButton from "./boton_scroll.js";
 const d = document, w = window;
 // d.addEventListener("readystatechange", (e) =>{
-//     alert('test2');
+//     scrollTopButton(".scroll-top-btn");
     
     
 //     });
 
 d.addEventListener("DOMContentLoaded", (e) =>{
-// alert('test1');
+w.scrollTo(0,0);
+
 scrollTopButton(".scroll-top-btn");
 
 });
 
-
 // w.addEventListener("load", (e) =>{
-//     alert('test3');
-    
+
+// scrollTopButton(".scroll-top-btn");
     
 //     });
 
@@ -23,12 +23,15 @@ scrollTopButton(".scroll-top-btn");
 /*Menu*/
 ((d)=>{
   const $btnMenu = d.querySelector('.navbar-toggler'),
-  $header = d.querySelector('header');
+  $header = d.querySelector('header'),  $navMenu = d.querySelector('#navbarNavAltMarkup');
+
+ 
   $btnMenu.addEventListener('click', (e)=>{
   $btnMenu.firstElementChild.classList.toggle('none');
   $btnMenu.lastElementChild.classList.toggle('none');
 
-    if (!$header.classList.contains('bg-md-second-color')) $header.classList.toggle('bg-md-second-color');
+
+    if (!$header.classList.contains('bg-second-color') || $navMenu.classList.contains('show')) $header.classList.toggle('bg-second-color');
 
   });
 
@@ -39,7 +42,7 @@ scrollTopButton(".scroll-top-btn");
   
       if(!e.target.matches('.menu a')) return false;
  
-      $btnMenu.click();
+    //   $btnMenu.click();
    
       
   });
@@ -50,6 +53,7 @@ scrollTopButton(".scroll-top-btn");
   })(document);
 
 
+  
 
 
   /*ContactForm*/

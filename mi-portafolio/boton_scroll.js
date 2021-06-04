@@ -22,14 +22,15 @@ console.log("test", scrollTop);
     }
 
 
-    if (scrollTop > 75) {
+    if (scrollTop > 38) {
       $header.classList.remove('bg-transparent');
       $header.classList.add('bg-second-color');
       
-      $header.classList.add('bg-md-second-color');
-    } else {
+      // $header.classList.add('bg-md-second-color');
+    } 
+    else {
       $header.classList.remove('bg-second-color');
-      $header.classList.remove('bg-md-second-color');
+      // $header.classList.remove('bg-md-second-color');
     }
 
   });

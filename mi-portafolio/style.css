@@ -35,10 +35,10 @@ html {
 } 
 
 body {
-  /* margin: 0; */
-  
-  overflow-x: hidden; 
-  /* font-family:rela */
+
+  /* margin: 0;   */
+  overflow-x: hidden !important; 
+  font-family: var(--font);
   color: var(--text-color) !important;
 }
 
@@ -348,6 +348,10 @@ progress::-moz-progress-value {
   font-size: 0.85rem;
 }
 /****************Utilities*********************/
+.bg-second-color{
+  background-color: var(--second-color) !important;
+
+  }
 
 blockquote {
   margin-bottom: 1.5rem;
@@ -454,6 +458,7 @@ font-weight: bold;
   .bg-header-second-color{
 
     background-color: var(--second-color);
+
   }
 
 .navbar-light .navbar-toggler{
@@ -605,10 +610,7 @@ margin-top: 20px;
   
   }
 
-  .bg-md-second-color{
-    background-color: var(--second-color) !important;
-  
-  }
+
   
 
   }
@@ -640,7 +642,7 @@ margin-top: 20px;
   }
   a.navbar-brand{
   color:var(--white-color) !important; 
-  font-size: 2rem !important; 
+  /* font-size: 2rem !important;  */
 
   }
  
@@ -651,7 +653,7 @@ margin-top: 20px;
   .menu a{
     /* color: var(--first-color) !important; */
         color: var(--white-color) !important;
-        font-size: 1.7rem !important;
+        /* font-size: 1.5rem !important; */
 
  
 
@@ -662,10 +664,6 @@ margin-top: 20px;
 
   }
 
-  .bg-second-color{
-  background-color: var(--second-color) !important;
-
-  }
 
   
 }
