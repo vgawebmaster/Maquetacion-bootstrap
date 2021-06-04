@@ -22,18 +22,23 @@ scrollTopButton(".scroll-top-btn");
 
 /*Menu*/
 ((d)=>{
-  const $btnMenu = d.querySelector('.navbar-toggler');
+  const $btnMenu = d.querySelector('.navbar-toggler'),
+  $header = d.querySelector('header');
   $btnMenu.addEventListener('click', (e)=>{
   $btnMenu.firstElementChild.classList.toggle('none');
   $btnMenu.lastElementChild.classList.toggle('none');
 
-  
+    if (!$header.classList.contains('bg-md-second-color')) $header.classList.toggle('bg-md-second-color');
+
   });
+
+
+
   
   d.addEventListener('click', (e) => {
   
       if(!e.target.matches('.menu a')) return false;
-  
+ 
       $btnMenu.click();
    
       

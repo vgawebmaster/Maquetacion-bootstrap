@@ -256,10 +256,12 @@ padding-right: 0px !important;
 }
 .navbar-brand{
   font-size: 1.85rem !important;
-  color: var(--first-color) !important;
+  /* color: var(--first-color) !important; */
+    color: var(--white-color) !important;
 }
 .menu a{
-  color: var(--first-color) !important;
+  /* color: var(--first-color) !important; */
+    color: var(--white-color) !important;
   font-size: 1.5rem !important;
 }
 
@@ -275,7 +277,8 @@ padding-right: 0px !important;
 }
 
 .navbar-toggler svg {
-  fill: var(--first-color) !important;
+  /* fill: var(--first-color) !important; */
+  fill: var(--white-color) !important;
 }
 /*hero-image*/
 .hero-image{
@@ -302,14 +305,14 @@ background-attachment: var(--hero-attachment);
   font-size: 7.5vw;
   
   color: var(--hero-text-color);
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 
-.hero-image-title + p{
-  font-size: 5.3vw;
+.hero-image-title + h5{
+  font-size: 5vw;
   color: var(--hero-text-color);
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -363,10 +366,6 @@ body.modal-open { overflow:inherit; padding-right:inherit !important; }
   padding: 2rem 1rem !important;
   
   }
-.bg-light{
-  background-color: var(--second-color) !important;
-
-}
 
 .bg-progress-value{
 background-color: var(--first-color) !important; 
@@ -448,13 +447,22 @@ font-weight: bold;
 .header{
   z-index: 999;
   width: 100%;
-  background-color: var(--second-color);
+
 
   }
 
-.navbar-light .navbar-toggler{
+  .bg-header-second-color{
 
-border-color: #149ddd !important;
+    background-color: var(--second-color);
+  }
+
+.navbar-light .navbar-toggler{
+    
+
+border-color: var(--white-color) !important;
+  
+/* 
+border-color: #149ddd !important; */
 
 }
 .carousel{
@@ -597,6 +605,12 @@ margin-top: 20px;
   
   }
 
+  .bg-md-second-color{
+    background-color: var(--second-color) !important;
+  
+  }
+  
+
   }
   @media screen and (min-width: 769px) {
 
@@ -624,18 +638,32 @@ margin-top: 20px;
   height: 100vh;
   /* width: 100%; */
   }
+  a.navbar-brand{
+  color:var(--white-color) !important; 
+  font-size: 2rem !important; 
 
+  }
  
-  
+  .bg-transparent{
+    background-color: transparent !important;
+  }
  
   .menu a{
-    color: var(--first-color) !important;
+    /* color: var(--first-color) !important; */
+        color: var(--white-color) !important;
+        font-size: 1.7rem !important;
+
  
 
   }
   .menu a:hover, .menu a:focus {
     background-color: transparent !important;
     color: var(--first-color) !important;
+
+  }
+
+  .bg-second-color{
+  background-color: var(--second-color) !important;
 
   }
 
