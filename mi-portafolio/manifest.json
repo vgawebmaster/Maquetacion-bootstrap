@@ -1,0 +1,64 @@
+{"name":"#PortafolioVictorGuerrero",
+  "short_name":"#PortafolioVictorGuerrero",
+  "description":"Bienvedid@s a #PortafolioVictorGuerrero, donde podras ver un catalogo con mis trabajos y a la vez conocer mis Habilidades.",
+  "background-color":"#2B2B2B",
+  "theme-color":"#149ddd",
+  "orientation":"portrait",
+  "display":"standalone",
+  "start_url":"./?utm_source=web_app_manifest",
+  "scope":"./",
+  "lang":"es-MX",
+  "icons": [
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/victorguerrero.jpg",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+
+}
