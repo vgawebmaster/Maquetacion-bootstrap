@@ -12,14 +12,14 @@ urlsToCache = ['./',
 ];
 
 //test 
-var offlineURL ='offline.html';
+// var offlineURL ='offline.html';
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        return cache.addAll(offlineURL)
+        return cache.addAll(urlsToCache)
           .then(() => self.skipWaiting())
       })
       .catch(err => console.log('Falló registro de cache', err))
@@ -54,11 +54,13 @@ self.addEventListener('fetch', e => {
     caches.match(e.request)
       .then(res => {
         if (res) {
+          // console.log(res);
           //recuperar del cache
           return res
         }
         //recuperar de la petición a la url
         return fetch(e.request)
+
       })
   )
 })
