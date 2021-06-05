@@ -1,4 +1,4 @@
-;
+// ;
 // asignar un nombre y version al cache 
 const CACHE_NAME = 'v1_cache_portafolio_victor_guerrero',
 urlsToCache = ['./',
@@ -11,12 +11,15 @@ urlsToCache = ['./',
 './mi-portafolio/img/victorguerrero.jpg' // debiria ir el favicon aqui...
 ];
 
+//test 
+var offlineURL ='offline.html';
+
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
-        return cache.addAll(urlsToCache)
+        return cache.addAll(offlineURL)
           .then(() => self.skipWaiting())
       })
       .catch(err => console.log('Falló registro de cache', err))
