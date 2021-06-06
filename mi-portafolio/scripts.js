@@ -32,8 +32,11 @@ scrollTopButton(".scroll-top-btn");
   let scrollTop = window.pageYOffset || d.documentElement.scrollTop;
   if ($btnMenu.firstElementChild.classList.contains('none') && !$header.classList.contains('bg-second-color')) {
     $header.classList.add('bg-second-color');
+    $header.classList.remove('bg-transparent');
+
   }else if (scrollTop < 38){
     $header.classList.remove('bg-second-color');
+    $header.classList.add('bg-transparent');
 
   }
 

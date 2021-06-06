@@ -12,7 +12,7 @@ export default function scrollTopButton(btn) {
       return;
     }
     let scrollTop = window.pageYOffset || d.documentElement.scrollTop;
-// console.log("test", scrollTop);
+
     if (scrollTop > 600) {
       $scrollBtn.classList.remove('hidden');
 
@@ -25,12 +25,12 @@ export default function scrollTopButton(btn) {
     if (scrollTop > 38) {
       $header.classList.remove('bg-transparent');
       $header.classList.add('bg-second-color');
-      
-      // $header.classList.add('bg-md-second-color');
+
     } 
     else {
       $header.classList.remove('bg-second-color');
-      // $header.classList.remove('bg-md-second-color');
+      $header.classList.add('bg-transparent');
+
     }
 
   });

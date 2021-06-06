@@ -349,9 +349,21 @@ progress::-moz-progress-value {
 }
 /****************Utilities*********************/
 .bg-second-color{
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
   background-color: var(--second-color) !important;
 
   }
+
+   
+  .bg-transparent{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    background-color: transparent !important;
+  }
+ 
 
 blockquote {
   margin-bottom: 1.5rem;
@@ -646,9 +658,9 @@ margin-top: 20px;
 
   }
  
-  .bg-transparent{
+  /* .bg-transparent{
     background-color: transparent !important;
-  }
+  } */
  
   .menu a{
     /* color: var(--first-color) !important; */
