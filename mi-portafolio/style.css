@@ -131,8 +131,8 @@ p {
   cursor: pointer;
   font-size: 30px;
   font-weight: bold;
-  background-color: var(--first-color);
-  color: var(--second-color);
+  background-color: var(--second-color);
+  color: var(--first-color);
   outline: 0;
   border: 0;
   transition: all 0.3s ease-out;
@@ -140,7 +140,7 @@ p {
 }
 
 .scroll-top-btn:hover {
-  background-color: var(--first-alpha-color);
+  background-color: var(--second-alpha-color);
 
 }
 
