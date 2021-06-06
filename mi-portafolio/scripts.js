@@ -29,9 +29,16 @@ scrollTopButton(".scroll-top-btn");
   $btnMenu.addEventListener('click', (e)=>{
   $btnMenu.firstElementChild.classList.toggle('none');
   $btnMenu.lastElementChild.classList.toggle('none');
+  let scrollTop = window.pageYOffset || d.documentElement.scrollTop;
+  if ($btnMenu.firstElementChild.classList.contains('none') && !$header.classList.contains('bg-second-color')) {
+    $header.classList.add('bg-second-color');
+  }else if (scrollTop < 38){
+    $header.classList.remove('bg-second-color');
+
+  }
 
 
-    if (!$header.classList.contains('bg-second-color') || $navMenu.classList.contains('show')) $header.classList.toggle('bg-second-color');
+    // if (!$header.classList.contains('bg-second-color') || $navMenu.classList.contains('show')) $header.classList.toggle('bg-second-color');
 
   });
 
@@ -39,10 +46,11 @@ scrollTopButton(".scroll-top-btn");
 
   
   d.addEventListener('click', (e) => {
-  
-      if(!e.target.matches('.menu a')) return false;
- 
-    //   $btnMenu.click();
+    let breakpoint = w.matchMedia('(max-width: 991px)'); //interesante
+      if(!e.target.matches('.menu a') || !breakpoint.matches) return false;
+
+            $btnMenu.click();
+      
    
       
   });

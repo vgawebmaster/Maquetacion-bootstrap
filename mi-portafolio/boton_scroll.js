@@ -12,7 +12,7 @@ export default function scrollTopButton(btn) {
       return;
     }
     let scrollTop = window.pageYOffset || d.documentElement.scrollTop;
-console.log("test", scrollTop);
+// console.log("test", scrollTop);
     if (scrollTop > 600) {
       $scrollBtn.classList.remove('hidden');
 
@@ -36,7 +36,7 @@ console.log("test", scrollTop);
   });
 
   d.addEventListener("click", e => {
-
+   
     if (e.target.matches(btn) || e.target.matches(`${btn} *`)) {
       w.scrollTo({
         behavior: "smooth",
