@@ -41,7 +41,6 @@ scrollTopButton(".scroll-top-btn");
   }
 
 
-    // if (!$header.classList.contains('bg-second-color') || $navMenu.classList.contains('show')) $header.classList.toggle('bg-second-color');
 
   });
 
